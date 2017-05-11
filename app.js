@@ -92,7 +92,7 @@ ROOM»                        plug.dj/qplug-czsk
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/QPlugcz/QBot/master/package/languages.json", function (json) {
+        $.get("https://rawgit.com/hq8sr/QBot/master/package/languages.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -230,9 +230,9 @@ version: "1.9",
 status: false,
 name: "QBot",
 loggedInID: null,
-scriptLink: "https://rawgit.com/FALSEYING/MFEBOT/master/system.js",
-cmdLink: "http://qplug.funsite.cz/bot/commands",
-chatLink: "https://rawgit.com/QPlugcz/QBot/master/package/qplugcz.json",
+scriptLink: "https://rawgit.com/hq8sr/QBot/master/app.js",
+cmdLink: "http://qplug.funsite.cz/bot/prikazy",
+chatLink: "https://rawgit.com/hq8sr/QBot/master/package/qplugcz.json",
 chat: null,
 loadChat: loadChat,
 retrieveSettings: retrieveSettings,
@@ -240,8 +240,8 @@ retrieveFromStorage: retrieveFromStorage,
 settings: {
 botName: "QBot",
 language: "qplugcz",
-chatLink: "https://rawgit.com/QPlugcz/QBot/master/package/qplugcz.json",
-scriptLink: "https://rawgit.com/FALSEYING/MFEBOT/master/system.js",
+chatLink: "https://rawgit.com/hq8sr/QBot/master/package/qplugcz.json",
+scriptLink: "https://rawgit.com/hq8sr/QBot/master/app.js",
 roomLock: false, // Requires an extension to re-load the script
 joinedCount: 0,
 startupCap: 1, // 1-200
