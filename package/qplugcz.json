@@ -1,0 +1,126 @@
+{
+"nodatafound": "No data found.",
+
+"retrievingdata": "Retrieving previously stored data.",
+
+"datarestored": "Previously stored data successfully retrieved.",
+
+"greyuser": "Iba Manažéri+ môžu spustiť QBota!",
+
+"bouncer": "I cant be alive if i will run as a bouncer.",
+
+"online": "[ QPlug.cz ] Systém spustený! Verzia %%VERSION%%!",
+
+"welcome": "Vitaj @%%NAME%% v QPlug.cz! Dnes začína Double QPoints Týžden! Tak nezmeškaj. :relaxed:",
+"welcomeback": "Vitaj späť @%%NAME%% v QPlug.cz! Dnes začína Double QPoints Týžden! Tak nezmeškaj. :relaxed:",
+
+"songknown": "[@%%NAME%%] Táto pesnička je v histórií!",
+
+"notavailable": "[@%%NAME%%] Táto pesnička je nedostupná!",
+
+"isopen": "[ RULETA | @djs ] Ruleta je otvorená! Náhodne vylosovanie na prvé miesta v zozname čakaní! Použite !join pre pripojenie.",
+
+"winnerpicked": "[@%%NAME%%] Si výherca Rulety. Vyhral si %%POSITION%% pozíciu!",
+
+"usernotfound": "\/me I cant find the user.",
+
+"eta": "[@%%NAME%%] Tvoja pozícia v zozname čakaní je %%POSITION%% a budeš DJ približne za %%TIME%%!",
+
+"notdisconnected": "[@%%NAME%%] Nebol si nájdený v databáze!",
+
+"noposition": "[@%%NAME%%] Tvoja posledná pozícia sa nenašla, pretože počet ľudí v zozname klesol.",
+
+"toolongago": "[@%%NAME%%] Bol si preč príliš dlho. Presne to je %%TIME%%!",
+
+"valid": "[@%%NAME%%] Bol si preč %%TIME%%. Tvoja pozícia bola %%POSITION%%!",
+
+"caps": "[@%%NAME%%] Prosím vypni Caps Lock!",
+
+"invalidtime": "\/me [@%%NAME%%] Invalid time specified.",
+
+"nouserspecified": "[@%%NAME%%] No user specified.",
+
+"invaliduserspecified": "\/me [@%%NAME%%] Invalid user specified.",
+
+"nolistspecified": "\/me [@%%NAME%%] No list specified.",
+
+"invalidlistspecified": "\/me [@%%NAME%%] Invalid list specified.",
+
+"novaliduserspecified": "\/me [@%%NAME%%] No valid user specified.",
+
+"nolimitspecified": "\/me [@%%NAME%%] No limit specified.",
+
+"invalidlimitspecified": "\/me [@%%NAME%%] Invalid limit.",
+
+"invalidpositionspecified": "[@%%NAME%%] Invalid position specified.",
+
+"toggleon": "[@%%NAME%%] Funkcia %%FUNCTION%% je práve zapnutá!",
+
+"toggleoff": "[@%%NAME%%] Funkcia %%FUNCTION%% je práve vypnutá!",
+
+"cmddeletion": "CommandDeletion",
+
+"autoskip": "AutoSkip",
+
+"autograb": "AutoGrab",
+
+"timeguard": "TimeGuard",
+
+"lockdown": "LockChat",
+
+"chatfilter": "ChatFilter",
+
+"historyskip": "HistorySkip",
+
+"inteligence": "Umelá Inteligencia",
+
+"timelimit": "\/me @%%NAME%%, tvoje skladba je del\u0161\u00ed ne\u017e %%MAXLENGTH%% minut, pot\u0159ebuje\u0161 svolen\u00ed hr\u00e1t del\u0161\u00ed skladby.",
+
+"invalidtime": "\/me [@%%NAME%%] Byl zad\u00e1n neplatn\u00fd \u010das.",
+
+"maxlengthtime": "\/me [@%%NAME%%] Maxim\u00e1ln\u00ed povolen\u00e1 d\u00e9lka skladby nastavena na %%TIME%% minut.",
+
+"etarestriction": "Eta restriction",
+
+"chatcleared": "[@%%NAME%%] Použil si funkciu ChatClear!",
+
+"dclookuprank": "\/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
+
+"notinwaitlist": "[@%%NAME%%] Nie si v zozname čakaní!",
+
+"roulettejoin": "[@%%NAME%%] Pripojil si sa do Rulety! Použi !leave pre odpojenie.",
+
+"jointime": "[@%%NAMEFROM%%] %%USERNAME%% je v komunite %%TIME%%!",
+
+"kill": "[ QPlug.cz ] Systém sa vypína!",
+
+"logout": "\/me [@%%NAME%%] Logging out %%BOTNAME%%",
+
+"rouletteleave": "[@%%NAME%%] Opustil si Ruletu!",
+
+"move": "[@%%NAME%%] Použil si funkciu Move!",
+
+"reload": "\/me System is reloading!",
+
+"activefor": "Systém je aktívny %%TIME%%.",
+
+"whois": "[@%%NAME1%%] Meno: %%NAME2%% | ID: %%ID%% | Hodnosť: %%RANK%% | Jazyk: %%LANGUAGE%%!",
+
+"swapinvalid": "\/me @%%NAME%%, Invalid user specified.",
+
+"swapwlonly": "\/me @%%NAME%%, I can swap users only if they are in the waitlist!",
+
+"swapping": "[ SWAP ] Prehadzujem %%NAME1%% s %%NAME2%%!",
+
+"thorNotClose": "\/me [@%%NAME%%] Nemůžeš hrát minihry, když nejsi ve frontě nebo právě jsi DJ.",
+
+"thorcd": "\/me [@%%NAME%%] Hrát minihry můžeš za %%TIME%% minut.",
+
+"nahodaNotClose": "\/me [@%%NAME%%] Nemůžeš použít tento příkaz, když nejsi ve frontě nebo právě jsi DJ.",
+
+"nahodacd": "\/me [@%%NAME%%] Zkusit své štěstí můžeš znovu za %%TIME%% minut.",
+
+"inactivefor": "[@%%NAME%%] @%%USERNAME%% je neaktivný %%TIME%%.",
+
+"inactivelonger": "\/me [@%%NAME%%] @%%USERNAME%% je déle neaktivní, než %%BOTNAME%% se připojil."
+}
