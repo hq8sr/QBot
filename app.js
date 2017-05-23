@@ -3229,50 +3229,50 @@ API.sendChat("[@"+ from +"] Tento příkaz vyžaduje rank Bronze V nebo vyšší
 },
 
 //VIP příkaz
-pribehCommand: {
-command: ['pribeh', 'story'],
-rank: 'user',
-type: 'exact',
-functionality: function (chat, cmd) {
-if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-else{
+// pribehCommand: {
+// command: ['pribeh', 'story'],
+// rank: 'user',
+// type: 'exact',
+// functionality: function (chat, cmd) {
+// if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+// if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+// else{
 
-var giverTokens = validateTokens(chat.un);
-var msg = chat.message;
-var from = chat.un;
-var uzivatel = API.getUsers();
-var uzivatel2 = API.getUsers();
-var uzivatel3 = API.getUsers();
-var uzivatel4 = API.getUsers();
-var cislo = Math.floor((Math.random() * uzivatel.length) + 1);
-var cislo2 = Math.floor((Math.random() * uzivatel2.length) + 1);
-var cislo3 = Math.floor((Math.random() * uzivatel3.length) + 1);
-var cislo4 = Math.floor((Math.random() * uzivatel4.length) + 1);
-var zacatek = ["Když ses koupal, přišel tvůj","Když jsi vařil večeři, přišel tvůj","Uslyšel jsi zvonek a ve dveřích byl tvůj","Když jsi spal, přišel tvůj","Když jsi se díval na televizi, přišel tvůj"];
-var jaky = ["úchylný","hloupý","zamilovaný","retardovaný","pošahaný","chytrý","mocný","sexy","nemocný","vožralý"];
-var jake = ["úchylné","hloupé","zamilované","retardované","pošahané","chytré","mocné","sexy","nemocné","vožralé"];
-var kam = ["do hotelu","na zahradu","do popelnice","ven","na záchod","do sprchy","na Měsíc","do hospody","do vesmíru","za Zemanem","na hřiště","do auta","do letadla","do ponorky","pod zem","do rakve","do garáže","na půdu","do sklepa","domů","na intr","do školy"];
-var co = ["lovit křečky","nahánět holky","čumět na televizi","koukat z okna","hrát si na mobilu","stavět lego","sníst vše v lednici","chytat mouchy","povysávat byt","skládat puzzle","nahánět kluky","zkoušet létat","čistit latrýnu","mazlit se","fingovat sebevraždy","chlastat","žrát čokoládu","jezdit výtahem","klouzat se po zábradlí"];
-var co2 = ["rebelovali","opékali párky","naháněli kluky","naháněli holky","ožrali se","rybařili","stavěli sněhuláka","hecovali se","žrali kýbl zmrzliny"];
-var jak = ["úplně vypatlaně","bez rozmyšlení","sebejistě","maniacky","vychytrale","velmi rychle","docela pomalu","vožrale","opatrně"];
-var proc = ["protože bagr","protože je nikdo nemá rád.","protože to " + uzivatel4[(cislo4 - 1)].username + " přikazal.","protože jsou do sebe zamilovaní.","protože jsou zhulený.","protože chcou více drog.","protože jsou vožralý.","protože banán.","protože když máš 4 jablka a 3 hrušky, nemůžeš mít švestkový kompot."];
-var proc2 = ["protože jste retardi.","protože bagr neplave.","protože vás nikdo nemá rád.","protože jste do sebe zamilovaní.","protože jste zhulený.","protože chcete více drog.","protože jste vožralý.","protože banán.","protože když máte 4 jablka a 3 hrušky, nemůžete mít švestkový kompot."];
+// var giverTokens = validateTokens(chat.un);
+// var msg = chat.message;
+// var from = chat.un;
+// var uzivatel = API.getUsers();
+// var uzivatel2 = API.getUsers();
+// var uzivatel3 = API.getUsers();
+// var uzivatel4 = API.getUsers();
+// var cislo = Math.floor((Math.random() * uzivatel.length) + 1);
+// var cislo2 = Math.floor((Math.random() * uzivatel2.length) + 1);
+// var cislo3 = Math.floor((Math.random() * uzivatel3.length) + 1);
+// var cislo4 = Math.floor((Math.random() * uzivatel4.length) + 1);
+// var zacatek = ["Když ses koupal, přišel tvůj","Když jsi vařil večeři, přišel tvůj","Uslyšel jsi zvonek a ve dveřích byl tvůj","Když jsi spal, přišel tvůj","Když jsi se díval na televizi, přišel tvůj"];
+// var jaky = ["úchylný","hloupý","zamilovaný","retardovaný","pošahaný","chytrý","mocný","sexy","nemocný","vožralý"];
+// var jake = ["úchylné","hloupé","zamilované","retardované","pošahané","chytré","mocné","sexy","nemocné","vožralé"];
+// var kam = ["do hotelu","na zahradu","do popelnice","ven","na záchod","do sprchy","na Měsíc","do hospody","do vesmíru","za Zemanem","na hřiště","do auta","do letadla","do ponorky","pod zem","do rakve","do garáže","na půdu","do sklepa","domů","na intr","do školy"];
+// var co = ["lovit křečky","nahánět holky","čumět na televizi","koukat z okna","hrát si na mobilu","stavět lego","sníst vše v lednici","chytat mouchy","povysávat byt","skládat puzzle","nahánět kluky","zkoušet létat","čistit latrýnu","mazlit se","fingovat sebevraždy","chlastat","žrát čokoládu","jezdit výtahem","klouzat se po zábradlí"];
+// var co2 = ["rebelovali","opékali párky","naháněli kluky","naháněli holky","ožrali se","rybařili","stavěli sněhuláka","hecovali se","žrali kýbl zmrzliny"];
+// var jak = ["úplně vypatlaně","bez rozmyšlení","sebejistě","maniacky","vychytrale","velmi rychle","docela pomalu","vožrale","opatrně"];
+// var proc = ["protože bagr","protože je nikdo nemá rád.","protože to " + uzivatel4[(cislo4 - 1)].username + " přikazal.","protože jsou do sebe zamilovaní.","protože jsou zhulený.","protože chcou více drog.","protože jsou vožralý.","protože banán.","protože když máš 4 jablka a 3 hrušky, nemůžeš mít švestkový kompot."];
+// var proc2 = ["protože jste retardi.","protože bagr neplave.","protože vás nikdo nemá rád.","protože jste do sebe zamilovaní.","protože jste zhulený.","protože chcete více drog.","protože jste vožralý.","protože banán.","protože když máte 4 jablka a 3 hrušky, nemůžete mít švestkový kompot."];
 
-if (giverTokens > 4499) {
+// if (giverTokens > 4499) {
 
-API.sendChat("[@"+ from +"] " + zacatek[Math.floor(Math.random() * zacatek.length)] + " " + jaky[Math.floor(Math.random() * jaky.length)] + " kamarád " + uzivatel[(cislo - 1)].username + " s tím, ať jdete " + kam[Math.floor(Math.random() * kam.length)] + ". Odpověděl jsi, že ne, radši půjdeš " + co[Math.floor(Math.random() * co.length)] + ".");
-setTimeout(function(){ API.sendChat("Nakonec tě přemluvil. Cestou jste potkali " + jake[Math.floor(Math.random() * jake.length)] + " kamarády " + uzivatel2[(cislo2 - 1)].username + " a " + uzivatel3[(cislo3 - 1)].username + ". Zeptal ses, jestli chtějí jít s vámi. Na to ti " + jak[Math.floor(Math.random() * jak.length)] + " odpověděli, ať na to zapomeneš " + proc[Math.floor(Math.random() * proc.length)] + ""); }, 700);
-setTimeout(function(){ API.sendChat("Tak jsi jen pokrčil rameny a pokračovali jste v cestě " + kam[Math.floor(Math.random() * kam.length)] + ", abyste " + jak[Math.floor(Math.random() * jak.length)] + " " + co2[Math.floor(Math.random() * co2.length)] + " " + proc2[Math.floor(Math.random() * proc2.length)] + ""); }, 1500);
-}
+// API.sendChat("[@"+ from +"] " + zacatek[Math.floor(Math.random() * zacatek.length)] + " " + jaky[Math.floor(Math.random() * jaky.length)] + " kamarád " + uzivatel[(cislo - 1)].username + " s tím, ať jdete " + kam[Math.floor(Math.random() * kam.length)] + ". Odpověděl jsi, že ne, radši půjdeš " + co[Math.floor(Math.random() * co.length)] + ".");
+// setTimeout(function(){ API.sendChat("Nakonec tě přemluvil. Cestou jste potkali " + jake[Math.floor(Math.random() * jake.length)] + " kamarády " + uzivatel2[(cislo2 - 1)].username + " a " + uzivatel3[(cislo3 - 1)].username + ". Zeptal ses, jestli chtějí jít s vámi. Na to ti " + jak[Math.floor(Math.random() * jak.length)] + " odpověděli, ať na to zapomeneš " + proc[Math.floor(Math.random() * proc.length)] + ""); }, 700);
+// setTimeout(function(){ API.sendChat("Tak jsi jen pokrčil rameny a pokračovali jste v cestě " + kam[Math.floor(Math.random() * kam.length)] + ", abyste " + jak[Math.floor(Math.random() * jak.length)] + " " + co2[Math.floor(Math.random() * co2.length)] + " " + proc2[Math.floor(Math.random() * proc2.length)] + ""); }, 1500);
+// }
 
-else{
-API.sendChat("[@" + from + "] Tento příkaz vyžaduje rank Bronze V nebo vyšší! Více o rank systému nalezneš zde: http://qplug.funsite.cz/bot/qpoints");
-}
+// else{
+// API.sendChat("[@" + from + "] Tento příkaz vyžaduje rank Bronze V nebo vyšší! Více o rank systému nalezneš zde: http://qplug.funsite.cz/bot/qpoints");
+// }
 
-}
-}
-},
+// }
+// }
+// },
 
 komunitaCommand: {
 command: ['community','komunita', 'qplugcz', 'qplug'],
@@ -3520,7 +3520,7 @@ var msg = chat.message;
 var medzera = msg.indexOf(' ');
 
 if (medzera === -1){
-API.sendChat("[@"+ from.un +"] Tento príkaz sa používa: !sex @meno");
+API.sendChat("[@"+ from.un +"] Tento príkaz sa používa v tvare: !sex @meno");
 return false;
 }
 
@@ -3534,7 +3534,7 @@ return API.sendChat("[@" + from.un + "] Nevidím tohto užívateľa v komunite!"
 }
 
 else if (user.username === from.un){
-return API.sendChat("[@"+ from.un +"] Tento príkaz sa používa: !sex @meno");
+return API.sendChat("[@"+ from.un +"] Tento príkaz sa používa v tvare: !sex @meno");
 }
 
 else{
@@ -3562,7 +3562,7 @@ var msg = chat.message;
 var medzera = msg.indexOf(' ');
 
 if (medzera === -1){
-API.sendChat("[@" + from.un + "] Tento príkaz sa používa: !love @meno");
+API.sendChat("[@" + from.un + "] Tento príkaz sa používa v tvare: !love @meno");
 return false;
 }
 
@@ -3576,7 +3576,7 @@ return API.sendChat("[@" + from.un + "] Nevidím tohto užívateľa v komunite!"
 }
 
 else if (user.username === from.un){
-return API.sendChat("[@" + from.un + "] Tento príkaz sa používa: !love @meno");
+return API.sendChat("[@" + from.un + "] Tento príkaz sa používa v tvare: !love @meno");
 }
 
 else{
@@ -3606,8 +3606,8 @@ var msg = chat.message;
 var medzera = msg.indexOf(' ');
 
 if(medzera === -1){
-/*API.sendChat("[@"+ from +"] Momentálne sa nechystá žiadny event. Ak chceš vedieť kedy sa bude konať další Event ako prvý hoď Like na Facebook https://bit.ly/QPlugcz!");*/
-API.sendChat("[@"+ from +"] Dnes začína Double QPoints Týžden! Cez tento týždeň dostanete za 1 Woot = 2 QPoints | 1 Grab = 2 QPoints. :relaxed:");
+API.sendChat("[@"+ from +"] Momentálne sa nechystá žiadny event. Ak chceš vedieť kedy sa bude konať další Event ako prvý hoď Like na Facebook https://bit.ly/QPlugcz!");
+/*API.sendChat("[@"+ from +"] Dnes začína Double QPoints Týžden! Cez tento týždeň dostanete za 1 Woot = 2 QPoints | 1 Grab = 2 QPoints. :relaxed:");*/
 return false;
 }
 
@@ -3620,11 +3620,11 @@ return API.sendChat("[@"+ from +"] Nevidím tohto užívateľa v komunite!");
 }
 
 else if(user.username === chat.un){
-return API.sendChat("[@"+ from +"] Dnes začína Double QPoints Týžden! Cez tento týždeň dostanete za 1 Woot = 2 QPoints | 1 Grab = 2 QPoints. :relaxed:");
+return API.sendChat("[@"+ from +"] Momentálne sa nechystá žiadny event. Ak chceš vedieť kedy sa bude konať další Event ako prvý hoď Like na Facebook https://bit.ly/QPlugcz!");
 }
 
 else{
-return API.sendChat("[@"+ user.username +"] Dnes začína Double QPoints Týžden! Cez tento týždeň dostanete za 1 Woot = 2 QPoints | 1 Grab = 2 QPoints. :relaxed:");
+return API.sendChat("[@"+ from +"] Momentálne sa nechystá žiadny event. Ak chceš vedieť kedy sa bude konať další Event ako prvý hoď Like na Facebook https://bit.ly/QPlugcz!");
 }
 
 }
@@ -3705,7 +3705,7 @@ var msg = chat.message;
 var medzera = msg.indexOf(' ');
 
 if (medzera === -1){
-API.sendChat("[ AFK ] Užívateľ @"+ from.un +" je práve preč od klávesnice.");
+API.sendChat("[ AFK ] Užívateľ "+ from.un +" je práve preč od klávesnice.");
 return false;
 }
 
@@ -3713,7 +3713,7 @@ else{
 
 var dovod = msg.substring(cmd.length + 1);
 
-return API.sendChat("[ AFK ] Užívateľ @"+ from.un +" je práve preč od klávesnice z dôvodu: "+ dovod +"");
+return API.sendChat("[ AFK ] Užívateľ "+ from.un +" je práve preč od klávesnice z dôvodu: "+ dovod +"");
 
 }
 
@@ -3732,7 +3732,7 @@ else{
 
 var from = chat.un;
 
-API.sendChat("[ AFK ] Užívateľ @"+ from +" sa práve vrátil!");
+API.sendChat("[ AFK ] Užívateľ "+ from +" sa práve vrátil!");
 
 }
 }
@@ -3788,7 +3788,7 @@ var msg = chat.message;
 var medzera = msg.indexOf(' ');
 
 if(medzera === -1){
-API.sendChat("[ DISCORD ] Odkaz na náš Discord je https://bit.ly/QPlugczDiscord!");
+API.sendChat("[ DISCORD ] Odkaz na náš Discord server je https://bit.ly/QPlugczDiscord!");
 return false;
 }
 
@@ -3801,11 +3801,11 @@ return API.sendChat("[@" + from + "] Nevidím tohto užívateľa v komunite!");
 }
 
 else if(user.username === chat.un){
-return API.sendChat("[ DISCORD ] Odkaz na náš Discord je https://bit.ly/QPlugczDiscord!");
+return API.sendChat("[ DISCORD ] Odkaz na náš Discord server je https://bit.ly/QPlugczDiscord!");
 }
 
 else{
-return API.sendChat("[@"+ user.username +"] Odkaz na náš Discord je https://bit.ly/QPlugczDiscord!");
+return API.sendChat("[@"+ user.username +"] Odkaz na náš Discord server je https://bit.ly/QPlugczDiscord!");
 }
 
 }
@@ -3828,7 +3828,7 @@ var msg = chat.message;
 var medzera = msg.indexOf(' ');
 
 if(medzera === -1){
-API.sendChat("[ AUTOWOOT ] Je program na automatické Wootovanie a pomocou neho uvidíte naše pozadie. Ale obsahuje aj dalšie užitočné funkcie. Link https://rcs.radiant.dj/install!");
+API.sendChat("[ AUTOWOOT ] Je program na automatické Wootovanie a pomocou neho uvidíte naše pozadie. Obsahuje aj dalšie užitočné funkcie. Link https://rcs.radiant.dj/install!");
 return false;
 }
 
@@ -3841,11 +3841,11 @@ return API.sendChat("[@" + from + "] Nevidím tohto užívateľa v komunite!");
 }
 
 else if(user.username === chat.un){
-return API.sendChat("[ AUTOWOOT ] Je program na automatické Wootovanie a pomocou neho uvidíte naše pozadie. Ale obsahuje aj dalšie užitočné funkcie. Link https://rcs.radiant.dj/install!");
+return API.sendChat("[ AUTOWOOT ] Je program na automatické Wootovanie a pomocou neho uvidíte naše pozadie. Obsahuje aj dalšie užitočné funkcie. Link https://rcs.radiant.dj/install!");
 }
 
 else{
-return API.sendChat("[@"+ user.username +"] AutoWoot je program na automatické Wootovanie a pomocou neho uvidíte naše pozadie. Ale obsahuje aj dalšie užitočné funkcie. Link https://rcs.radiant.dj/install!");
+return API.sendChat("[@"+ user.username +"] AutoWoot Je program na automatické Wootovanie a pomocou neho uvidíte naše pozadie. Obsahuje aj dalšie užitočné funkcie. Link https://rcs.radiant.dj/install!");
 }
 
 }
@@ -3863,7 +3863,7 @@ if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0)
 if (!basicBot.commands.executable(this.rank, chat)) return void (0);
 else{
 
-API.sendChat("[ QPlug.cz ] Systém spustený! Verzia "+ basicBot.version +"! Použite !prikazy pre zoznam príkazov.");
+API.sendChat("[ QPlug.cz ] Systém spustený! Použite !prikazy pre zoznam príkazov.");
 
 }
 }
@@ -3883,7 +3883,7 @@ var msg = chat.message;
 var medzera = msg.indexOf(' ');
 
 if(medzera === -1){
-API.sendChat("[ PRÍKAZY ] Príkazy našeho systému najdeš na http://qplug.funsite.cz/bot/prikazy!");
+API.sendChat("[ PRÍKAZY ] Príkazy nášho Bota najdeš na http://qplug.funsite.cz/bot/prikazy!");
 return false;
 }
 
@@ -3896,11 +3896,11 @@ return API.sendChat("[@" + from + "] Nevidím tohto užívateľa v komunite!");
 }
 
 else if(user.username === chat.un){
-return API.sendChat("[ PRÍKAZY ] Príkazy našeho systému najdeš na http://qplug.funsite.cz/bot/prikazy!");
+return API.sendChat("[ PRÍKAZY ] Príkazy nášho Bota najdeš na http://qplug.funsite.cz/bot/prikazy!");
 }
 
 else{
-return API.sendChat("[@"+ user.username +"] Príkazy našeho systému najdeš na http://qplug.funsite.cz/bot/prikazy!");
+return API.sendChat("[@"+ user.username +"] Príkazy nášho Bota najdeš na http://qplug.funsite.cz/bot/prikazy!");
 }
 
 }
@@ -4001,12 +4001,10 @@ setTimeout(function(){ API.moderateMuteUser(from_id, 1, API.MUTE.MEDIUM); }, 500
 function advance(obj){
 if (!obj.dj || !obj.media) return;
 
-var repi = "5006795";
-var dave = "3431885";
 var hellbyte = "4635487";
 var tessi = "5477951";
 
-if(obj.dj.id === 5006795 || obj.dj.id === 3431885 || obj.dj.id === 4635487 || obj.dj.id === 5477951){
+if(obj.dj.id === 4635487 || obj.dj.id === 5477951){
 $("#grab").click();
 $(".pop-menu ul li:first-child").mousedown();
 }
